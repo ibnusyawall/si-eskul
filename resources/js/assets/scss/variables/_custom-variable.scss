@@ -1,0 +1,66 @@
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Theme Skin Colors
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+
+$themecolor: #2962ff;
+$themecolor-dark: #028ee1;
+$themecolor-alt: #26c6da;
+$theme-light: #fff;
+$theme-dark: #212529;
+
+$skin1: #2962ff;
+$skin2: #fe5419;
+$skin3: #00b0ff;
+$skin4: #6659f7;
+$skin5: #272b34;
+$skin6: #fff;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Header Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+
+$topbar: $theme-light;
+$topbar-height: 64px;
+$topbar-navlink-padding: 0px 15px;
+$topbar-navlink-font-size: 0.875rem;
+$topbar-navlink-height: 64px;
+$topbar-navbrand-padding: 0 10px 0 10px;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Sidebar Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+
+$sidebar: $theme-light;
+$sidebar-alt: #e8eff0;
+$sidebar-text: #fff;
+$sidebar-icons: #fff;
+$sidebar-icons-size: 20px;
+$sidebar-text-dark: #212529;
+$sidebar-icons-dark: #4f5467;
+
+$sidebar-width-full: 250px;
+$sidebar-width-mini: 65px;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Boxed Layout Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+
+$boxed-width: 1300px;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Shadow Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+
+$shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Transition Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$transitions: 0.2s ease-in;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Dark Transparent
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$transparent-dark-bg: rgba(0, 0, 0, 0.05);
+
+$border-color: rgba(0, 0, 0, 0.1);

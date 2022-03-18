@@ -1,0 +1,284 @@
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Theme Google Fonts
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Bootstrap Override Colors
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #a1aab2 !default;
+$gray-600: #6c757d !default;
+$gray-700: #4f5467 !default;
+$gray-800: #323743 !default;
+$gray-900: #272b34 !default;
+$black: #000 !default;
+$text-muted: $gray-500 !default;
+
+$primary: #2962ff !default;
+$secondary: $gray-600 !default;
+$success: #0bb7af !default;
+$info: #35b1e8 !default;
+$warning: #fbcd00 !default;
+$danger: #f64e60 !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+$orange: #fb8c00 !default;
+
+$light-primary: #d5dffd !default;
+$light-info: #e1f0ff !default;
+$light-warning: #fbeccd !default;
+$light-danger: #f7b3bf !default;
+$light-success: #abece1 !default;
+$light-secondary: #e4eaef !default;
+$light-cyan: #aae1fb !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "orange": $orange,
+    "light-primary": $light-primary,
+    "light-info": $light-info,
+    "light-warning": $light-warning,
+    "light-danger": $light-danger,
+    "light-success": $light-success,
+    "light-secondary": $light-secondary,
+    "light-cyan": $light-cyan,
+  ),
+  $theme-colors
+);
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Quickly modify global styling by enabling or disabling optional features.
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+$enable-negative-margins: true;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Body Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$main-body-bg: #fff !default;
+$body-bg: #eef5f9;
+$body-color: #3e5569 !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Grid Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$grid-gutter-width: 20px !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1600px,
+  xxl: 1800px,
+) !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Typography Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$font-size-base: 0.875rem;
+$font-family-sans-serif: "Nunito Sans", sans-serif !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 700 !default;
+$font-weight-bold: 800 !default;
+
+$h1-font-size: 36px !default;
+$h2-font-size: 30px !default;
+$h3-font-size: 24px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+
+// Font size
+$font-sizes: (
+  1: 10px,
+  2: 12px,
+  3: 14px,
+  4: 16px,
+  5: 18px,
+  6: 20px,
+  7: 24px,
+);
+
+// display
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem,
+  8: 1.75rem,
+) !default;
+
+$headings-margin-bottom: (1rem / 2) !default;
+$headings-font-weight: 700 !default;
+$headings-color: inherit !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Breadcrumb Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$breadcrumb-bg: transparent;
+$breadcrumb-margin-bottom: 1.5rem;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Cards Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$card-border-width: 0px !default;
+$card-border-color: transparent !default;
+$card-spacer-y: 1.25rem !default;
+$card-spacer-x: 1.25rem !default;
+$card-border-radius: 4px !default;
+$card-cap-bg: $light !default;
+
+$toast-border-width: 0 !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Dropdowns Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$dropdown-item-padding-x: 1rem !default;
+$dropdown-item-padding-y: 0.65rem !default;
+$dropdown-border-color: $gray-200;
+$dropdown-divider-bg: $gray-100;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// List Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$list-group-item-padding-y: 12px !default;
+$list-group-item-padding-x: 20px !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Buttons Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$btn-secondary-border: $gray-300;
+$btn-box-shadow: none !default;
+$btn-focus-box-shadow: none !default;
+$input-btn-focus-width: 0 !default;
+$input-btn-focus-color-opacity: 0 !default;
+$input-btn-focus-color: rgba(
+  transparent,
+  $input-btn-focus-color-opacity
+) !default;
+
+//
+// Button Shadow & Hover
+//
+$enable-shadows: false !default;
+$btn-border-radius: 4px !default;
+$btn-border-radius-sm: 4px !default;
+$btn-border-radius-lg: 4px !default;
+
+//
+// Checkbox
+//
+$form-check-input-bg: #ebedf3 !default;
+$form-check-input-border: 0 !default;
+$form-check-input-border-radius: 4px !default;
+$form-check-input-width: 1.375em !default;
+$form-check-input-height: 1.375em !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Progressbar Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$progress-bg: $gray-100;
+$progress-height: 5px !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Table Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$table-bg-accent: $gray-100;
+$table-bg-hover: $gray-100;
+$table-hover-bg: $gray-100 !default;
+$table-cell-padding-y: 1rem !default;
+$table-cell-padding-x: 1rem !default;
+$table-bg-level: -10 !default;
+$table-bg-level2: 1 !default;
+$table-bg-level3: -5 !default;
+$table-border-color: $gray-200;
+$table-group-separator-color: transparent;
+$table-striped-bg: $light !default;
+$table-cell-padding-y-sm: 10px !default;
+$table-cell-padding-x-sm: 15px !default;
+
+// alert
+$alert-bg-scale: 0% !default;
+$alert-border-scale: 0% !default;
+$alert-color-scale: 1% !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Component Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$component-active-color: $white !default;
+$component-active-bg: #2962ff !default;
+$badge-pill-padding-x: 0.2em !default;
+$badge-pill-padding-y: 1em !default;
+$badge-font-size: 12px !default;
+$badge-font-weight: 400 !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Form Input Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$input-group-addon-bg: $gray-100;
+$input-border-color: $gray-200;
+$input-group-addon-border-color: $gray-200;
+$input-btn-focus-color: rgba(0, 0, 0, 0.25) !default;
+$input-focus-border-color: rgba(0, 0, 0, 0.25) !default;
+$custom-control-indicator-active-bg: rgba(0, 0, 0, 0.35) !default;
+//$custom-select-indicator: url(../../assets/images/custom-select.png)!default;
+$input-btn-focus-box-shadow: transparent !default;
+$custom-select-focus-box-shadow: transparent !default;
+//$custom-select-indicator: str-replace(url(""),"%23") !default;
+$form-select-box-shadow: none !default;
+$form-select-focus-box-shadow: none !default;
+$input-border-radius-sm: 4px !default;
+$input-border-radius-lg: 4px !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Border Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$border-width: 1px !default;
+$border-color: $gray-200 !default;
+
+$border-radius: 4px !default;
+$border-radius-lg: 5px !default;
+$border-radius-sm: 1px !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Modal Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$modal-content-border-width: 0 !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Tabs Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$nav-tabs-link-active-bg: $white !default;
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+// Navbar Settings
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+$navbar-dark-color: rgba($white, 0.8) !default;
+$navbar-dark-hover-color: rgba($white, 1) !default;

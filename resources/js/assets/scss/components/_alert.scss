@@ -1,0 +1,21 @@
+.bt-alert {
+  border-radius: 14px;
+  font-size: 15px;
+  padding: 10px;
+  .btn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border-radius: 9px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 22px;
+    }
+  }
+  &.alert-dismissible .close {
+    top: unset;
+  }
+}

@@ -1,0 +1,70 @@
+/*-- ============================================================== 
+ Ipad & above all(768px) 
+ ============================================================== */
+.light,
+.dark {
+  min-height: 100vh;
+}
+.light {
+  background-color: $body-bg;
+}
+.page-wrapper {
+  padding-top: 60px;
+  overflow-x: hidden;
+  .min-height {
+    min-height: calc(100vh - 130px);
+  }
+}
+@include media-breakpoint-up(lg) {
+  .full-sidebar {
+    .page-wrapper {
+      margin-left: $sidebar-width-full;
+    }
+  }
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.fs-1 {
+  font-size: 2.5rem !important;
+}
+.fs-2 {
+  font-size: 2rem !important;
+}
+.fs-3 {
+  font-size: 1.5rem !important;
+}
+.p-35 {
+  padding: 1.25rem;
+}
+.dropdown-toggle::after {
+  position: relative;
+  top: 2px;
+}
+.border-top,
+.border-bottom,
+.border-left,
+.border-right,
+.form-control {
+  border-color: $border-color;
+}
+
+.form-control,
+.form-control:focus {
+  background-color: transparent;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.dropdown-menu {
+  box-shadow: $shadow;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: $gray-100;
+}
+
+.card-title {
+  margin-bottom: 14px;
+}

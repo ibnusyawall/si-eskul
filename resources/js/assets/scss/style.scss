@@ -1,0 +1,36 @@
+// --------------------------------------------------------------------
+// Author Name   : Nirav Joshi
+// --------------------------------------------------------------------
+// For more info : https://www.wrappixel.com/
+// --------------------------------------------------------------------
+// Product Name  : Xtreme Admin
+// --------------------------------------------------------------------
+
+//
+// All the extended and custom variables(Required file)
+//
+@import "variables/variable";
+@import "variables/custom-variable";
+
+//
+// Import Bootstrap source files (Required file)
+//
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";
+
+//
+//This is for the layouts (Required file)
+//
+@import "layouts/topbar/topbar";
+@import "layouts/sidebar/sidebar";
+@import "layouts/container/container";
+@import "layouts/reboot";
+
+// components
+@import "components/alert";
+
+//
+//This is for the icons (Required file)
+//
+
+@import "icons/material-design-iconic-font/css/materialdesignicons.min.css";

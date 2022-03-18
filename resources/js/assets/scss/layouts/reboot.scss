@@ -1,0 +1,106 @@
+* {
+  outline: none;
+}
+
+.fs-7 {
+  font-size: 24px;
+}
+
+// editor
+.hljs {
+  background: rgb(1, 22, 39) !important;
+  border-radius: 3px;
+  color: rgb(214, 222, 235) !important;
+}
+
+.hljs-attribute,
+.hljs-bullet,
+.hljs-class,
+.hljs-function,
+.hljs-function .hljs-keyword,
+.hljs-meta-keyword,
+.hljs-selector-pseudo,
+.hljs-tag,
+.hljs-built_in,
+.hljs-emphasis,
+.hljs-name,
+.hljs-quote,
+.hljs-strong,
+.hljs-title,
+.hljs-variable {
+  color: rgb(130, 170, 255) !important;
+}
+
+.hljs-attr,
+.hljs-params,
+.hljs-template-tag,
+.hljs-type {
+  color: $warning !important;
+}
+
+.hljs-addition,
+.hljs-meta-string,
+.hljs-section,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-string,
+.hljs-symbol {
+  color: $danger !important;
+}
+
+// buttons
+.btn-grp .btn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-grp .custom-dropdown.dropdown.btn-group {
+  .btn:first-child {
+    margin-right: 0;
+  }
+}
+
+// fonts
+
+.fw-medium {
+  font-weight: $font-weight-medium;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.display-7 {
+  font-size: 27px;
+}
+
+a:focus {
+  outline: none;
+}
+
+table,
+.table {
+  td,
+  th {
+    vertical-align: middle;
+    padding: 0.75rem 1.2rem;
+  }
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem 1.2rem;
+}
+
+.b-avatar .b-avatar-badge {
+  min-height: 10px !important;
+  min-width: 10px !important;
+}

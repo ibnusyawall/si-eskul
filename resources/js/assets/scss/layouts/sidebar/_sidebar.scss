@@ -1,0 +1,127 @@
+.left-sidebar {
+  position: fixed;
+  height: 100%;
+  z-index: 51;
+  transition: 0.1s ease-in;
+  color: $sidebar-text;
+  box-shadow: $shadow;
+  &.bg-white {
+    color: $sidebar-text-dark;
+  }
+  .scrlbar {
+    height: calc(100vh - 100px);
+    overflow: auto;
+  }
+  .navbar-header {
+    padding: 0 10px;
+    height: 60px;
+    line-height: 55px;
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  .nav .nav-item {
+    .nav-link {
+      color: inherit;
+      cursor: pointer;
+      align-items: center;
+      padding: 12px 15px;
+      opacity: 0.7;
+      margin-bottom: 5px;
+      &:hover,
+      &.router-link-exact-active {
+        opacity: 1;
+      }
+      i.mdi,
+      i.feather {
+        margin: 0 7px;
+        font-size: $sidebar-icons-size;
+      }
+      i.feather,
+      i > .feather {
+        height: 18px;
+        width: 18px;
+        fill: rgba(0, 0, 0, 0.2);
+      }
+      &:hover.collapsed,
+      &.not-collapsed {
+        background: rgba(0, 0, 0, 0.05);
+      }
+      .hide-text {
+        max-width: 164px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .sub-menu .nav-link i {
+      font-size: 16px;
+      margin: 0 8px;
+    }
+    .collapsed .dd-arrow {
+      transform: rotate(-90deg);
+      font-size: 12px;
+      -webkit-transform: rotate(-90deg);
+    }
+    .nav-small-cap {
+      font-size: 12px;
+      padding: 12px 15px;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      line-height: 30px;
+      margin-top: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      i {
+        margin: 0 7px;
+        font-size: $sidebar-icons-size;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .full-sidebar {
+    .left-sidebar {
+      width: $sidebar-width-full;
+    }
+  }
+  .mini-sidebar {
+    .left-sidebar {
+      width: $sidebar-width-mini;
+      .logo-text,
+      .hide-text {
+        display: none;
+      }
+
+      &:hover {
+        width: $sidebar-width-full;
+        .logo-text,
+        .hide-text {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.close-sidebar-btn {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+@include media-breakpoint-down(md) {
+  .left-sidebar {
+    width: $sidebar-width-full;
+    z-index: 51;
+    margin-left: -$sidebar-width-full;
+    &.show-sidebar {
+      margin-left: 0px;
+      box-shadow: $shadow;
+    }
+  }
+}
